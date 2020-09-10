@@ -1,3 +1,43 @@
+# ==================== CREATED BY MAHMUD HASAN ===================== #
+
+### Java ###
+/*.class
+/.mtj.tmp/
+/*/.attach_pid**
+/*/.classpath
+/*/.factorypath
+/*/.project
+.project
+/*.jar
+*.war
+*.ear
+hs_err_pid*
+target/
+/**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+/**/application.properties
+/.settings/
+/**/.settings/
+
+## Directory-based project format
+.idea/
+
+## File-based project format
+*.ipr
+*.iml
+*.iws
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+
+
+
+
 # Compiled class file
 *.class
 
