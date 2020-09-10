@@ -22,6 +22,11 @@ release.properties
 /**/application.properties
 /.settings/
 /**/.settings/
+mvnw.cmd
+mvnw
+.*
+*.md
+
 
 ## Directory-based project format
 .idea/
