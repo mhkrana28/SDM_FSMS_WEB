@@ -2,6 +2,8 @@ package com.peopleslabbd.webapps.sdmfsms.repositories;
 
 import static org.junit.Assert.assertNotNull;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,6 +17,14 @@ public class AdminRepositoryTest {
 	private AdminRepository adminRepo;
 	
 	@Test
+	public void testFindAll() {
+		List<Admin> list = adminRepo.findAll();
+		System.out.println("Total Admin Count: "+list.size());
+		
+		assertNotNull(list);
+	}
+	
+	@Test
 	public void testSaveAdmin() {
 		Admin admin = adminRepo.save(getSampleAdmin());
 		System.out.println("Saved object: "+admin.toString());
@@ -26,7 +36,6 @@ public class AdminRepositoryTest {
 		return new Admin().setName("Abdul Goni")
 				   .setPhoneNumber("01916453423")
 				   .setPassword("xyz123")
-				   .setNidNumber("1990768765")
 				   .setRoleCode(Short.MAX_VALUE)
 				   .setActive(true);
 	}

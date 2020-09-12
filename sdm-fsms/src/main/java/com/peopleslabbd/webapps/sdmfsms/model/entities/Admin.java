@@ -53,9 +53,6 @@ public class Admin {
 	private String phoneNumber;
 	
 	@Column
-	private String nidNumber;
-	
-	@Column
 	@Temporal(TemporalType.TIMESTAMP)
 	@Setter(value = AccessLevel.PRIVATE)
 	private Date addedTime;
