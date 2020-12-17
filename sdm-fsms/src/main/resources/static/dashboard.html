@@ -15,6 +15,25 @@
     <link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.2.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
     <title> মাতৃছায়া শো-রূম অ্যাপ </title>
+    
+    
+    
+    <style>
+	    .bg-theme {
+	    	background-color: #42968c;
+	    	color: #e7eef0;
+	    }
+	    
+	    .bg-theme-optional {
+	    	background-color: #a6d8e0n;
+	    	color: rgba(0, 0, 0, .5);
+	    }
+	    
+	    .text-theme-secondary {
+	    	color: #42968c;
+	    }
+    </style>
+    
 </head>
 
 <body>
@@ -26,8 +45,8 @@
         <!-- navbar -->
         <!-- ============================================================== -->
         <div class="dashboard-header">
-            <nav class="navbar navbar-expand-lg sidebar-dark fixed-top">
-                <a class="navbar-brand text-muted" href="index.html">মাতৃছায়া এডমিন   </a>
+            <nav class="navbar navbar-expand-lg bg-theme fixed-top">
+                <a class="navbar-brand text-light" href="index.html">মাতৃছায়া এডমিন   </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -136,10 +155,14 @@
         <!-- ============================================================== -->
         <!-- end navbar -->
         <!-- ============================================================== -->
+        
+        
+        
+        
         <!-- ============================================================== -->
         <!-- left sidebar -->
         <!-- ============================================================== -->
-        <div class="nav-left-sidebar sidebar-dark">
+        <div class="nav-left-sidebar sidebar-secondary">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -148,56 +171,11 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
-                            <li class="nav-divider">
-                                Menu
+                            <li >
+                                12/12/2020 07:25pm
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
-                                <div id="submenu-1" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">E-Commerce</a>
-                                            <div id="submenu-1-2" class="collapse submenu" style="">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="index.html">E Commerce Dashboard</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product.html">Product List</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product-single.html">Product Single</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product-checkout.html">Product Checkout</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard-finance.html">Finance</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard-sales.html">Sales</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Infulencer</a>
-                                            <div id="submenu-1-1" class="collapse submenu" style="">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="dashboard-influencer.html">Influencer</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="influencer-finder.html">Influencer Finder</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="influencer-profile.html">Influencer Profile</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a class="nav-link active" href="pages/dashboard.html"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>UI Elements</a>
@@ -339,25 +317,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-fw fa-inbox"></i>Apps <span class="badge badge-secondary">New</span></a>
-                                <div id="submenu-7" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/inbox.html">Inbox</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/email-details.html">Email Detail</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/email-compose.html">Email Compose</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/message-chat.html">Message Chat</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fa-columns"></i>Icons</a>
                                 <div id="submenu-8" class="collapse submenu" style="">
@@ -430,8 +390,11 @@
         <!-- ============================================================== -->
         <!-- end left sidebar -->
         <!-- ============================================================== -->
+       
+       
+       
         <!-- ============================================================== -->
-        <!-- wrapper  -->
+        <!-- wrapper OPERATIONAL BOARD -->
         <!-- ============================================================== -->
         <div class="dashboard-wrapper">
             <div class="container-fluid  dashboard-content">
@@ -441,12 +404,11 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h3 class="mb-2">এক নজরে পরিসংখ্যান </h3>
-                            <p class="pageheader-text">Lorem ipsum dolor sit ametllam fermentum ipsum eu porta consectetur adipiscing elit.Nullam vehicula nulla ut egestas rhoncus.</p>
+                            <h3 class="mb-2 text-theme-secondary" > এক নজরে পরিসংখ্যান </h3>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                                        <li class="breadcrumb-item"><a href="dashboard.html" class="breadcrumb-link">ড্যাশবোর্ড</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">এক নজরে পরিসংখ্যান </li>
                                     </ol>
                                 </nav>
@@ -529,9 +491,9 @@
                     <!-- ============================================================== -->
                     <!-- top selling products  -->
                     <!-- ============================================================== -->
-                    <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="card">
-                            <h5 class="card-header bg-primary">সেরা বিক্রির ইতিহাস </h5>
+                    <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12" >
+                        <div class="card" style="min-height: 500px;">
+                            <h5 class="card-header bg-theme"><i class="fas fa-history"></i> সেরা বিক্রির ইতিহাস </h5>
                             <div class="card-body p-0">
                                 <div class="table-responsive">
                                     <table class="table table-hover">
@@ -598,12 +560,14 @@
                     <!-- ============================================================== -->
                     <!-- end top selling products  -->
                     <!-- ============================================================== -->
+                   
+                   
                     <!-- ============================================================== -->
                     <!-- revenue locations  -->
                     <!-- ============================================================== -->
                     <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="card">
-                            <h5 class="card-header bg-primary">দৈনিক টাকা কালেকশন ও বিক্রি </h5>
+                        <div class="card" style="min-height: 500px;">
+                            <h5 class="card-header bg-theme"><i class="fas fa-calculator"></i> দৈনিক টাকা কালেকশন ও বিক্রি </h5>
                             <div class="card-body p-0">
                                 <ul class="traffic-sales list-group list-group-flush">
                                 	<li class="traffic-sales-content list-group-item "><span class="traffic-sales-name">তারিখ </span><span class="traffic-sales-amount">কালেকশন  <span class="icon-circle-small icon-box-xs text-success ml-4 bg-success-light"></span><span class="ml-1 text-success">বিক্রি </span></span>
@@ -667,8 +631,6 @@
     <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
     <!-- bootstrap bundle js-->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <!-- slimscroll js-->
-    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
     <!-- chartjs js-->
     <script src="assets/vendor/charts/charts-bundle/Chart.bundle.js"></script>
     <script src="assets/vendor/charts/charts-bundle/chartjs.js"></script>

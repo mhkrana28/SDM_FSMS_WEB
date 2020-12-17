@@ -37,7 +37,7 @@ import lombok.experimental.Accessors;
 public class Admin {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@NonNull
@@ -58,7 +58,7 @@ public class Admin {
 	private Date addedTime;
 	
 	@Column
-	private Short roleCode;
+	private int roleCode;
 	
 	@Column
 	@Getter(value = AccessLevel.PRIVATE)
