@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.peopleslabbd.webapps.sdmfsms.commons.enums.Role;
 import com.peopleslabbd.webapps.sdmfsms.model.entities.Admin;
 
 @SpringBootTest
@@ -33,10 +34,12 @@ public class AdminRepositoryTest {
 	}
 	
 	private Admin getSampleAdmin() {
-		return new Admin().setName("Abdul Goni")
-				   .setPhoneNumber("01916453423")
-				   .setPassword("xyz123")
-				   .setRoleCode(Short.MAX_VALUE)
-				   .setActive(true);
+		return new Admin()
+				.setFullName("Abdul Goni")
+				.setUserName("admin")
+				.setPhoneNumber("01917464603")
+				.setPassword("admin123")
+				.setRoleCode(Role.SUPER.getCode())
+				.setActive(true);
 	}
 }

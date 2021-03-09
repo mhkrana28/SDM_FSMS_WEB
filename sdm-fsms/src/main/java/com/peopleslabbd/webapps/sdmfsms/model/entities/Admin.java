@@ -37,19 +37,23 @@ import lombok.experimental.Accessors;
 public class Admin {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
 	@NonNull
-	@Column(nullable = false)
-	private String name;
+	@Column
+	private String fullName;
 	
 	@NonNull
-	@Column(nullable = false)
+	@Column(unique = true)
+	private String userName;
+	
+	@NonNull
+	@Column
 	private String password;
 	
 	@NonNull
-	@Column(nullable = false)
+	@Column
 	private String phoneNumber;
 	
 	@Column

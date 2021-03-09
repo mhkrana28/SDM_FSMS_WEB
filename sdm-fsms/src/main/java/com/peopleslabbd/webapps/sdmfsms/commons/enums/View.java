@@ -1,17 +1,16 @@
 package com.peopleslabbd.webapps.sdmfsms.commons.enums;
 
 /**
- * Contains All JSP page and fragment names
+ * Contains All JSP page and fragment names with individual path reference
  * 
  * @author MAHMUD HASAN
  * @since 2020-12-17
  */
 public enum View {
 
-	LOGIN_PAGE("login-page"),
-	DIR_COMMON("common"),
-	DASHBOARD_PARENT("dashboard"),
-	DASH_HOME("dash-home");
+	LOGIN_PAGE("login"),
+	DASHBOARD_PARENT("common/parent"),
+	DASHBOARD_HOME("dashboard-home");
 
 	private String viewName;
 

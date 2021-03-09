@@ -12,6 +12,10 @@ public enum Role {
 		this.roleCode = roleCode;
 	}
 
+	public int getCode() {
+		return this.roleCode;
+	}
+	
 	public String getRole() {
 		return roleCode == 1 ? Txt.SUPER : Txt.COMMON;
 	}
