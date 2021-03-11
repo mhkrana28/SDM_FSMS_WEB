@@ -13,11 +13,10 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
@@ -32,7 +31,7 @@ import lombok.experimental.Accessors;
 @Table
 @Data
 @NoArgsConstructor
-@RequiredArgsConstructor
+@AllArgsConstructor
 @Accessors(chain = true)
 public class Admin {
 
@@ -40,19 +39,15 @@ public class Admin {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	@NonNull
 	@Column
 	private String fullName;
 	
-	@NonNull
 	@Column(unique = true)
 	private String userName;
 	
-	@NonNull
 	@Column
 	private String password;
 	
-	@NonNull
 	@Column
 	private String phoneNumber;
 	

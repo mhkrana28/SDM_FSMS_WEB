@@ -12,7 +12,7 @@ import com.peopleslabbd.webapps.sdmfsms.commons.enums.Role;
 import com.peopleslabbd.webapps.sdmfsms.model.entities.Admin;
 
 @SpringBootTest
-public class AdminRepositoryTest {
+public class AdminRepositoryTester {
 	
 	@Autowired
 	private AdminRepository adminRepo;
